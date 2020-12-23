@@ -7,7 +7,9 @@
 # useful for handling different item types with a single interface
 from itemadapter import ItemAdapter
 
-
 class ArticleScraperPipeline:
     def process_item(self, item, spider):
+        print('I was here', item['originalUrl'])
         return item
+
+
